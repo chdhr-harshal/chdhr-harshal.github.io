@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>H. Chaudhari</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website">
+    <meta name="author" content="Harshal Chaudhari">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic"
+        rel="stylesheet"
+        type="text/css">
+
+    <!-- FontAwesome JS -->
+    <link 
+        rel="stylesheet" 
+        href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+        crossorigin="anonymous">
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-10.css">
+
+    <!-- Google Analytics JS -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-57279660-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="10">
+    <div class="top-bar  theme-bg-primary-darken fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark position-relative">
+            <div class="container-fluid">
+                <ul class="social-list list-inline mb-0">
+                    <li class="list-inline-item">
+                        <a class="text-white" href="https://twitter.com/chdhr_harshal">
+                        <i class="fab fa-twitter fa-fw"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="text-white" href="https://www.linkedin.com/in/harshal-a-chaudhari/">
+                        <i class="fab fa-linkedin fa-fw"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="text-white" href="https://instagram.com/chdhr.harshal">
+                        <i class="fab fa-instagram fa-fw"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="text-white" href="https://github.com/chdhr-harshal">
+                        <i class="fab fa-github fa-fw"></i>
+                        </a>
+                    </li>
+                </ul>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navigation"
+                    aria-controls="navigation"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fab fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse text-uppercase" id="navigation" data-target=".navbar-collapse" data-toggle="collapse">
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li class="nav-item mr-lg-3">
+                            <a class="nav-link" href="#about-section">About</a>
+                        </li>
+                        <li class="nav-item mr-lg-3">
+                            <a class="nav-link" href="#research-section">Research</a>
+                        </li>
+                        <li class="nav-item mr-lg-3">
+                            <a class="nav-link" href="#resume-section">Resume</a>
+                        </li>
+                        <li class="nav-item mr-lg-3">
+                            <a class="nav-link" href="#contact-section">Contact</a>
+                        </li>
+                    </ul>
+                    <span id="slide-line"></span>
+                </div>
+            </div><!--//container-->
+        </nav>
+    </div><!--//top-bar-->
+
+    <header class="header" id="about-section">
+        <div class="header-intro theme-bg-primary text-white py-5">
+            <div class="container">
+                <div class="profile-teaser project flex-column flex-md-row">
+                    <img 
+                        class="profile-image mb-3 mb-md-0 mr-md-5 ml-md-0 rounded mx-auto"
+                        src="assets/images/profile.jpg"
+                        alt="">
+                    <div class="project-body text-center text-md-left">
+                        <div class="lead">Hello, my name is</div>
+                        <h2 class="mt-0 display-4 font-weight-bold">Harshal Chaudhari</h2>
+                        <div class="bio mb-3">
+                            I'm a PhD candidate in Computer Science at Boston University,
+                            co-advised by Prof. John Byers and Prof. Evimaria Terzi.
+                            My research interests include problems in algorithmic data mining,
+                            operations research and their applications in urban transportation
+                            systems. 
+                        </div><!--bio-->
+                    </div><!--project-body-->
+                </div><!--//profile-teaser-->
+            </div><!--//container-->
+        </div><!--//header-intro-->
+    </header>
+
+    <section id="about-section" class="about-section py-5">
+        <div class="container">
+            <div class="skills-blocks mx-auto pt-5">
+                <div class="row">
+                    <div class="skills-block col-12 col-lg-4 mb-5 mb-3 mb-lg-0">
+                        <div class="skills-block-inner bg-white shadow-sm py-4 px-5 position-relative">
+                            <h4 class="skills-cat text-center mb-3 mt-5">Research</h4>
+                            <div class="skills-icon-holder position-absolute d-inline-block rounded-circle text-center">
+                                <span style="color: white;">
+                                <i class="fas fa-microscope fa-2x fa-fw"></i>
+                                </span>
+                            </div>
+                            <ul class="skills-list list-unstyled text-secondary">
+                                <li class="mb-2"><i class="fas fa-caret-right mr-2 text-primary"></i>Explainable A.I. Systems</li>
+                                <li class="mb-2"><i class="fas fa-caret-right mr-2 text-primary"></i>Reinforcement Learning</li>
+                                <li class="mb-2"><i class="fas fa-caret-right mr-2 text-primary"></i>Robust Optimization</li>
+                                <li class="mb-2"><i class="fas fa-caret-right mr-2 text-primary"></i>Causal Inference</li>
+                            </ul>
+                        </div><!--//skils-block-inner-->
+                    </div><!--//skills-block-->
+
+                    <div class="skills-block col-12 col-lg-4 mb-5 mb-3 mb-lg-0">
+                        <div class="skills-block-inner bg-white shadow-sm py-4 px-5 position-relative">
+                            <h4 class="skills-cat text-center mb-3 mt-5">Programming</h4>
+                            <div class="skills-icon-holder position-absolute d-inline-block rounded-circle text-center">
+                                <span style="color: white;">
+                                <i class="fas fa-laptop-code fa-2x fa-fw"></i>
+                                </span>
+                            </div>
+                            <ul class="skills-list list-unstyled text-secondary">
+                                <li class="mb-2"><i class="fas fa-caret-right mr-2 text-primary"></i>Python, Java, C++</li>
+                                <li class="mb-2"><i class="fas fa-caret-right mr-2 text-primary"></i>Stata, R</li>
+                                <li class="mb-2"><i class="fas fa-caret-right mr-2 text-primary"></i>Apache Spark, Hadoop</li>
+                                <li class="mb-2"><i class="fas fa-caret-right mr-2 text-primary"></i>SQL, MongoDB</li>
+                            </ul>
+                        </div><!--//skils-block-inner-->
+                    </div><!--//skills-block-->
+
+                    <div class="skills-block col-12 col-lg-4 mb-5 mb-3 mb-lg-0">
+                        <div class="skills-block-inner bg-white shadow-sm py-4 px-5 position-relative">
+                            <h4 class="skills-cat text-center mb-3 mt-5">Courses</h4>
+                            <div class="skills-icon-holder position-absolute d-inline-block rounded-circle text-center">
+                                <span style="color: white;">
+                                <i class="fas fa-book-open fa-2x fa-fw"></i>
+                                </span>
+                            </div>
+                            <ul class="skills-list list-unstyled text-secondary">
+                                <li class="mb-2"><i class="fas fa-caret-right mr-2 text-primary"></i>Statistical ML</li>
+                                <li class="mb-2"><i class="fas fa-caret-right mr-2 text-primary"></i>Advanced Algorithms</li>
+                                <li class="mb-2"><i class="fas fa-caret-right mr-2 text-primary"></i>Optimization Theory</li>
+                                <li class="mb-2"><i class="fas fa-caret-right mr-2 text-primary"></i>Operations Research</li>
+                            </ul>
+                        </div><!--//skils-block-inner-->
+                    </div><!--//skills-block-->
+                </div><!--//row-->
+            </div><!--//skills-blocks-->
+        </div><!--//container-->
+
+        <div class="container">
+            <div class="row">
+		        <div class="news-intro col-12 col-lg-12 mx-lg-auto mt-5 mb-5 text-center">
+			        <h4 class="text-center mb-3 mt-5">Latest News</h4>
+			        <div class="speech-bubble bg-white p-4 p-lg-5 shadow-sm">
+                        <p class="mb-12 text-secondary text-left"><b class="text-primary">Oct 2020:</b>  Our work
+                        "Learn to Earn: Enabling Coordination Within a Ride-Hailing Fleet" has been accepted at
+                        IEEE BigData, 2020.</p>
+
+                        <p class="mb-12 text-secondary text-left"><b class="text-primary">Aug 2020:</b>  My work with
+                        Zillow Group on Fairness in Multistakeholder Recommendations has been
+                        accepted at FATREC workshop held alongside RecSys 2020.</p>
+
+                        <p class="mb-12 text-secondary text-left"><b class="text-primary">Aug 2019:</b>  I will be 
+                        visiting Anchorage, Alaska for KDD 2019. Hope to see you there!</p>
+
+                        <p class="mb-12 text-secondary text-left"><b class="text-primary">Oct 2018:</b>  After spending 
+                        a very worthwhile summer interning at Zillow, we have decided to continue our research together 
+                        remotely.</p>
+
+                        <p class="mb-12 text-secondary text-left"><b class="text-primary">May 2018:</b>  Excited to spend 
+                        my summer at Zillow Group as an AI intern on the Personalization team.</p>
+
+                        <p class="mb-12 text-secondary text-left"><b class="text-primary">Feb 2018:</b> Our paper 
+                        "Putting Data in the Driver's Seat: Optimizing Earnings for On-Demand Ride-Hailing" featured on  
+                        <a href="https://blog.acolyer.org/2018/02/20/putting-data-in-the-drivers-seat-optimising-earnings-for-on-demand-ride-hailing/">The Morning Paper.</a></p>
+
+                        <p class="mb-12 text-secondary text-left"><b class="text-primary">Jan 2018:</b>   Our paper  
+                        "Markov Chain Monitoring" accepted at 
+                        <a href="http://www.siam.org/meetings/sdm18/">SIAM International Conference on Data Mining (SDM18), San Diego.</a></p>
+
+                        <p class="mb-12 text-secondary text-left"><b class="text-primary">Dec 2018:</b>   Our paper
+                        "Impact of free app promotion on future sales" accepted at 
+                        <a href="https://sites.google.com/view/tsmo2018/home">TSMO 2018: Workshop on Two-sided Marketplace
+                        Optimization</a></p>
+
+                        <p class="mb-12 text-secondary text-left"><b class="text-primary">Oct 2017:</b>   Our paper
+                        "Putting Data in the Driver's Seat: Optimizing Earnings for On-Demand Ride-Hailing" accepted at
+                        <a href="http://www.wsdm-conference.org/2018/index.html">WSDM 2018, Los Angeles.</a></p>
+			        </div>
+		        </div><!--//news-intro-->
+            </div><!--//row-->
+        </div><!--//container-->
+    </section><!--//section-->
+
+    <section id="research-section" class="research-section py-5">
+        <div class="container">
+            <div class="row">
+		        <div class="research-intro col-12 col-lg-12 mx-lg-auto mb-5 text-center">
+			        <h4 class="text-center mb-3 mt-5 pb-5">Research projects</h4>
+	                    <div class="project mb-5 flex-column flex-lg-row bg-white shadow-sm">
+		                    <div class="card-img-container position=relative">
+                                <img class="card-img-top rounded-0" src="assets/images/projects/project-5.png" alt="">
+		                    </div>
+		                    <div class="project-body p-4">
+                                <h5 class="paper-title">A General Framework for Fairness in Multistakeholder
+                                    Recommendations</h5>
+                                <ul class="paper-authors list-inline mb-3 mt-2">
+                                    <li class="list-inline-item">Authors: </li>
+                                    <li class="list-inline-item">Harshal A. Chaudhari, </li>
+                                    <li class="list-inline-item">Sangdi Lin, </li>
+                                    <li class="list-inline-item">Ondrej Linda</li>
+                                </ul>
+			                    <div class="paper-content">
+			            	        <p>Traditionally, multistakeholder recommendations problems have been formulated as
+                                    integer linear programs which compute recommendations in an offline fashion, by
+                                    incorporating provider constraints. Such approaches can lead to unforeseen biases
+                                    wherein certain users consistently receive low utility recommendations in order to
+                                    meet the global coverage constraints. To remedy this situation, we propose a
+                                    general formulation that incorporates provider coverage objectives alongside
+                                    individual user objectives, in a real-time personalized recommender system.
+			                    </div>
+			                    <ul class="paper-meta list-inline mb-2">
+			            	        <li class="list-inline-item"><i class="fas fa-code-branch mr-2"></i>GitHub</li>
+			            	        <li class="list-inline-item"><i class="fas fa-file-pdf mr-2"></i>
+                                    <a href="./assets/pdfs/papers/paper-5.pdf">PDF</a></li>
+			            	        <li class="list-inline-item"><i class="fas fa-book mr-2"></i>
+                                    <a href="./assets/pdfs/papers/paper-5.pdf">Proceedings</a></li>
+			                    </ul>
+		                    </div>
+	                    </div><!--//project-->   
+	                    <div class="project mb-5 flex-column flex-lg-row bg-white shadow-sm">
+		                    <div class="card-img-container position=relative">
+                                <img class="card-img-top rounded-0" src="assets/images/projects/project-4.png" alt="">
+		                    </div>
+		                    <div class="project-body p-4">
+                                <h5 class="paper-title">Endure: A Robust Tuning Paradigm for LSM Trees Under
+                                Workload Uncertainty</h5>
+                                <ul class="paper-authors list-inline mb-3 mt-2">
+                                    <li class="list-inline-item">Authors: </li>
+                                    <li class="list-inline-item">Andy Huynh, </li>
+                                    <li class="list-inline-item">Harshal A. Chaudhari, </li>
+                                    <li class="list-inline-item">Evimaria Terzi, </li>
+                                    <li class="list-inline-item">Manos Athanassoulis</li>
+                                </ul>
+			                    <div class="paper-content">
+			            	        <p>Modern LSM-tree backed key-value stores co-tune merge policies, buffer sizes and
+                                    the false positive rates for the Bloom filters across different levels of LSM-tree.
+                                    These systems typically minimize the costs for fixed workloads. We augment them to
+                                    make them robust to perturbations in workloads.
+			                    </div>
+			                    <ul class="paper-meta list-inline mb-2">
+			            	        <li class="list-inline-item"><i class="fas fa-code-branch mr-2"></i>GitHub</li>
+                                    <li class="list-inline-item"><i class="fas fa-file-pdf mr-2"></i>
+                                    <a href="./assets/pdfs/papers/paper-6.pdf">PDF</a></li>
+                                    <li class="list-inline-item"><i class="fas fa-book mr-2"></i>
+                                    <a href="./assets/pdfs/papers/paper-6.pdf">Proceedings</a></li>
+			                    </ul>
+		                    </div>
+	                    </div><!--//project-->   
+	        
+	                    <div class="project mb-5 flex-column flex-lg-row bg-white shadow-sm">
+		                    <div class="card-img-container position=relative">
+                                <img class="card-img-top rounded-0" src="assets/images/projects/project-3.png" alt="">
+		                    </div>
+		                    <div class="project-body p-4">
+		                    <h5 class="paper-title">Learn to Earn: Enabling Coordination Within a Ride-Hailing Fleet</h5>
+                                <ul class="paper-authors list-inline mb-3 mt-2">
+                                    <li class="list-inline-item">Authors: </li>
+                                    <li class="list-inline-item">Harshal A. Chaudhari, </li>
+                                    <li class="list-inline-item">John W. Byers, </li>
+                                    <li class="list-inline-item">Evimaria Terzi </li>
+                                </ul>
+			                    <div class="paper-content">
+			            	        <p>We combine the interpretability of vanilla reinforcement learning with
+                                    combinatorial optimization techniques to propose a systematically tunable, scalable
+                                    and effective framework to maximize earnings of a fleet of ride-share drivers.
+			                    </div>
+			                    <ul class="paper-meta list-inline mb-2">
+			            	        <li class="list-inline-item"><i class="fas fa-code-branch mr-2"></i>
+                                    <a href="https://github.com/chdhr-harshal/learn-to-earn">GitHub</a></li>
+			            	        <li class="list-inline-item"><i class="fas fa-file-pdf mr-2"></i>
+                                    <a href="./assets/pdfs/papers/paper-3.pdf">PDF</a></li>
+			            	        <li class="list-inline-item"><i class="fas fa-book mr-2"></i>
+                                    <a href="./assets/pdfs/papers/paper-3.pdf">Proceedings</a></li>
+			                    </ul>
+		                    </div>
+	                    </div><!--//project-->   
+	        
+	                    <div class="project mb-5 flex-column flex-lg-row bg-white shadow-sm">
+		                    <div class="card-img-container position=relative">
+                                <img class="card-img-top rounded-0" src="assets/images/projects/project-2.png" alt="">
+		                    </div>
+		                    <div class="project-body p-4">
+		                    <h5 class="paper-title">Markov Chain Monitoring</h5>
+                                <ul class="paper-authors list-inline mb-3 mt-2">
+                                    <li class="list-inline-item">Authors: </li>
+                                    <li class="list-inline-item">Harshal A. Chaudhari, </li>
+                                    <li class="list-inline-item">Michael Mathioudakis, </li>
+                                    <li class="list-inline-item">Evimaria Terzi </li>
+                                </ul>
+			                    <div class="paper-content">
+			            	        <p>Given an initial distribution of items over the nodes of a Markov chain, we wish
+                                    to estimate the distribution of items at subsequent times. In deriving these
+                                    estimates, we issue queries to retrieve partial information on the distribution of
+                                    items.</p>
+			                    </div>
+			                    <ul class="paper-meta list-inline mb-2">
+			            	        <li class="list-inline-item"><i class="fas fa-code-branch mr-2"></i>
+                                    <a href="https://github.com/chdhr-harshal/mc-monitor">GitHub</a></li>
+			            	        <li class="list-inline-item"><i class="fas fa-file-pdf mr-2"></i>
+                                    <a href="./assets/pdfs/papers/paper-2.pdf">PDF</a></li>
+			            	        <li class="list-inline-item"><i class="fas fa-book mr-2"></i>
+                                    <a href="https://epubs.siam.org/doi/abs/10.1137/1.9781611975321.50">Proceedings</a></li>
+			                    </ul>
+		                    </div>
+	                    </div><!--//project-->   
+	        
+	                    <div class="project mb-5 flex-column flex-lg-row bg-white shadow-sm">
+		                    <div class="card-img-container position=relative">
+                                <img class="card-img-top rounded-0" src="assets/images/projects/project-1.png" alt="">
+		                    </div>
+		                    <div class="project-body p-4">
+		                    <h5 class="paper-title">Putting Data in the Driver's Seat</h5>
+                                <ul class="paper-authors list-inline mb-3 mt-2">
+                                    <li class="list-inline-item">Authors: </li>
+                                    <li class="list-inline-item">Harshal A. Chaudhari, </li>
+                                    <li class="list-inline-item">John W. Byers, </li>
+                                    <li class="list-inline-item">Evimaria Terzi </li>
+                                </ul>
+			                    <div class="paper-content">
+			            	        <p>We formalize the problem of devising a strategy to maximize expected earnings of
+                                    ride-hailing service driver, describe a series of algorithms to solve the problem,
+                                    and exemplify the methods on a large scale simulation of driving for Uber in NYC
+                                    ... <a href="https://blog.acolyer.org/2018/02/20/putting-data-in-the-drivers-seat-optimising-earnings-for-on-demand-ride-hailing/">Read more</a>.</p>
+			                    </div>
+			                    <ul class="paper-meta list-inline mb-2">
+			            	        <li class="list-inline-item"><i class="fas fa-code-branch mr-2"></i>
+                                    <a href="https://github.com/chdhr-harshal/uber-driver-strategy">GitHub</a></li>
+			            	        <li class="list-inline-item"><i class="fas fa-file-pdf mr-2"></i>
+                                    <a href="./assets/pdfs/papers/paper-1.pdf">PDF</a></li>
+			            	        <li class="list-inline-item"><i class="fas fa-book mr-2"></i>
+                                    <a href="https://dl.acm.org/citation.cfm?id=3159721">Proceedings</a></li>
+			                    </ul>
+		                    </div>
+	                    </div><!--//project-->   
+	        
+	                    <div class="project mb-5 flex-column flex-lg-row bg-white shadow-sm">
+		                    <div class="card-img-container position=relative">
+                                <img class="card-img-top rounded-0" src="assets/images/projects/project-0.png" alt="">
+		                    </div>
+		                    <div class="project-body p-4">
+		                    <h5 class="paper-title">Impacts of free app promotion</h5>
+                                <ul class="paper-authors list-inline mb-3 mt-2">
+                                    <li class="list-inline-item">Authors: </li>
+                                    <li class="list-inline-item">Harshal A. Chaudhari, </li>
+                                    <li class="list-inline-item">John W. Byers</li>
+                                </ul>
+			                    <div class="paper-content">
+			            	        <p>Amazon's Free App of the Day program, aimed at improving app visibility using
+                                    daily free promotions, is a compelling experiment in the 'economics of free'. We
+                                    investigate its longer-term consequences on the performance of apps on Amazon
+                                    Appstore.</p>
+			                    </div>
+			                    <ul class="paper-meta list-inline mb-2">
+			            	        <li class="list-inline-item"><i class="fas fa-code-branch mr-2"></i>
+                                    <a href="https://github.com/chdhr-harshal/amazon-appstore-scraper">GitHub</a></li>
+			            	        <li class="list-inline-item"><i class="fas fa-file-pdf mr-2"></i>
+                                    <a href="./assets/pdfs/papers/paper-0.pdf">PDF</a></li>
+			            	        <li class="list-inline-item"><i class="fas fa-book mr-2"></i>
+                                    <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3078067">Proceedings</a></li>
+			                    </ul>
+		                    </div>
+	                    </div><!--//project-->   
+		        </div><!--//research-intro-->
+            </div><!--//row-->
+        </div><!--//container-->
+    </section><!--//section-->
+
+    <section id="resume-section">
+        <div class="container">
+            <div class="row">
+		        <div class="col-12 col-lg-12 text-center">
+			        <h4 class="text-center mb-3 mt-5">Resume</h4>
+                    <object data="./assets/pdfs/resume/resume.pdf" type="application/pdf" style="min-height:73vh;width:100%">
+                        <p> Your web browser doesn't have PDF plugin. Instead you can 
+                        <a href="./assets/pdfs/resume/short_resume.pdf">click here</a> to download the PDF file.</p>
+                    </object>
+		        </div><!--//resume-intro-->
+            </div><!--//row-->
+        </div><!--//container-->
+    </section><!--//section-->
+
+    <section id="contact-section">
+        <div class="container">
+            <div class="row">
+		        <div class="contact-intro col-lg-8 mx-lg-auto mb-5 text-center">
+			        <img class="profile-small d-inline-block mx-auto rounded-circle mb-3" src="assets/images/profile.jpg" alt="">
+			        <div class="speech-bubble bg-white p-4 p-lg-5 shadow-sm">
+				        <p class="text-center mb-3">My fullform <a href="./assets/pdfs/resume/resume.pdf">CV</a> is
+                        available here.</p>
+				        <h6 class="font-weight-bold text-center mb-3">You can also find me on the following channels</h6>
+				        <ul class="social-list-color list-inline mb-0">
+				            <li class="list-inline-item mb-3"><a class="twitter" href="https://twitter.com/chdhr_harshal"><i class="fab fa-twitter fa-fw"></i></a></li>
+			                <li class="list-inline-item mb-3"><a class="linkedin" href="https://www.linkedin.com/in/harshal-a-chaudhari/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+			                <li class="list-inline-item mb-3"><a class="github" href="https://github.com/chdhr-harshal"><i class="fab fa-github-alt fa-fw"></i></a></li>
+			            </ul><!--//social-list-->
+			        </div>
+            </div><!--//row-->
+        </div><!--//container-->
+    </section><!--//section-->
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+
+    <!-- Custon JS -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
