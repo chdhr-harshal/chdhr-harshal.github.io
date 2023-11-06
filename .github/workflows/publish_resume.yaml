@@ -1,0 +1,42 @@
+name: Publish LaTeX Resumes
+
+on:
+  push:
+    paths:
+      - 'resume/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      # Setup a LaTeX environment
+      - name: Setup LaTeX
+        uses: xu-cheng/latex-action@v2
+
+      # Compile resume.tex to PDF
+      - name: Compile resume.tex
+        run: |
+          latexmk -pdf -output-directory=assets/pdfs/resume/ resume/resume.tex
+          latexmk -c -output-directory=assets/pdfs/resume/ resume/resume.tex
+
+      # Compile short_resume.tex to PDF
+      - name: Compile short_resume.tex
+        run: |
+          latexmk -pdf -output-directory=assets/pdfs/resume/ resume/short_resume.tex
+          latexmk -c -output-directory=assets/pdfs/resume/ resume/short_resume.tex
+
+      # Commit and push the generated PDF files
+      - name: Commit PDFs
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add assets/pdfs/resume/*.pdf
+          git commit -m "Compile LaTeX files to PDF" -a || echo "No changes to commit"
+          git push
