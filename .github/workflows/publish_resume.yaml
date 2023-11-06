@@ -16,21 +16,24 @@ jobs:
         with:
           fetch-depth: 0
 
-      # Setup a LaTeX environment
-      - name: Setup LaTeX
-        uses: xu-cheng/latex-action@v2
-
-      # Compile resume.tex to PDF
+      # Compile resume.tex
       - name: Compile resume.tex
-        run: |
-          latexmk -pdf -output-directory=assets/pdfs/resume/ resume/resume.tex
-          latexmk -c -output-directory=assets/pdfs/resume/ resume/resume.tex
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: resume/resume.tex
+          working_directory: resume
 
-      # Compile short_resume.tex to PDF
+      # Compile short_resume.tex
       - name: Compile short_resume.tex
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: resume/short_resume.tex
+          working_directory: resume
+          
+      # Move compiled PDFs to assets directory
+      - name: Move compiled PDFs to assets directory
         run: |
-          latexmk -pdf -output-directory=assets/pdfs/resume/ resume/short_resume.tex
-          latexmk -c -output-directory=assets/pdfs/resume/ resume/short_resume.tex
+          cp resume/*.pdf assets/pdfs/resume/
 
       # Commit and push the generated PDF files
       - name: Commit PDFs
