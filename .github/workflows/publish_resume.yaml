@@ -20,14 +20,14 @@ jobs:
       - name: Compile resume.tex
         uses: dante-ev/latex-action@latest
         with:
-          root_file: resume/resume.tex
+          root_file: resume.tex
           working_directory: resume
 
       # Compile short_resume.tex
       - name: Compile short_resume.tex
         uses: dante-ev/latex-action@latest
         with:
-          root_file: resume/short_resume.tex
+          root_file: short_resume.tex
           working_directory: resume
           
       # Move compiled PDFs to assets directory
