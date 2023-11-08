@@ -44,7 +44,6 @@ log/
 logs/
 *.log.[0-9]*
 *.log.[0-9]*.*
-*.csv
 *.dat
 *.out
 *.pid
@@ -130,7 +129,6 @@ __pycache__/
 *.bak
 *.old
 *.class
-*.css
 *.dvi
 *.xdv
 *.mp
