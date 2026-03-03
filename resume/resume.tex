@@ -85,6 +85,20 @@
 }
 
 \section{Research Experience}
+\cventry{2025}{AXE: A Task Decomposition Approach to Learned LSM Tuning}{}{}{VLDB 2025}
+{
+    Co-authors: Andy Huynh, Anwesha Saha, Prof. Manos Athanassoulis\\
+    A common challenge for LSM-based systems is tuning them effectively, particularly as the complexity and number
+        of tuning knobs increase.
+    We introduce AXE, a novel learned LSM tuning paradigm that decomposes the tuning task into two steps.
+    First, AXE trains a learned cost model using existing performance modeling or execution logs, acting as a 
+        surrogate cost function in the tuning process.
+    Second, AXE efficiently generates arbitrarily many training samples for a learned tuner optimized to identify
+        high-performance tunings using the learned cost model as its loss function.
+    Our approach generalizes well for tuning simple and complex LSM designs and requires no retraining, 
+        allowing AXE to be used for tuning at scale.
+}
+
 \cventry{2023}{Towards Flexibility and Robustness of LSM Trees}{}{}{VLDB Journal: Special Issue on ML and DB}
 {
     Co-authors: Andy Huynh, Prof. Evimaria Terzi, Prof. Manos Athanassoulis\\
