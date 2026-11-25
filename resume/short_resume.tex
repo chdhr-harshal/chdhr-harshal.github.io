@@ -13,6 +13,7 @@
 
 \begin{document}
 \maketitle
+\vspace*{-1.5em} % tighten the theme's 2.5em gap under the name to keep the CV on one page
 
 \section{Personal Information}
 \cvline{Contact}{\email{harshal@bu.edu}{harshal@bu.edu}}
@@ -37,6 +38,7 @@
 \cventry{2011}{Software Development Intern}{KPCL, India.}{}{}{}
 
 \section{Research Publications}
+\cventry{}{Speculative Decoding for Semantic-ID-Based Generative Recommendations}{}{}{arXiv `26}{}
 \cventry{}{AXE: A Task Decomposition Approach to Learned LSM Tuning}{}{}{VLDB `25}{}
 \cventry{}{Towards Flexibility and Robustness of LSM Trees}{}{}{VLDB Journal `23}{}
 \cventry{}{Endure: A Robust Tuning Paradigm for LSM Trees Under Workload Uncertainty}{}{}{VLDB `22}{}
@@ -54,5 +56,6 @@
 \cvline{}{Algorithmic Data Mining (Graduate), Combinatoric Structures in Discrete Mathematics, Introduction to Java Programming}
 
 \section{Programming Experience}
-\cvline{}{Python, Tensorflow, PyTorch, Apache Spark, Scala, Java, R, C/C++, SQL, etc. on GCP and AWS Cloud.}
+% [-\baselineskip] cancels the empty line \cvline leaves after the last entry, which otherwise spills onto a blank page 2
+\cvline[-\baselineskip]{}{Python, Tensorflow, PyTorch, Apache Spark, Scala, Java, R, C/C++, SQL, etc. on GCP and AWS Cloud.}
 \end{document}

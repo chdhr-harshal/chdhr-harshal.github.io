@@ -85,6 +85,18 @@
 }
 
 \section{Research Experience}
+\cventry{2026}{Speculative Decoding for Semantic-ID-Based Generative Recommendations}{}{}{arXiv preprint}
+{
+    Generative recommender systems with Semantic IDs (SIDs) typically retrieve candidates with constrained beam
+        search, which incurs a fixed cost of one sequential model call per SID level and offers no guarantee on how
+        close its output is to the exact top-K.
+    We propose SIDECAR, which scores approximate draft candidates in a single tree-attention pass and certifies
+        the exact top-K if the draft contains them; otherwise, a branch-and-bound fallback expands only the parts
+        of the trie that can still change the output.
+    Under a budget on memory and model calls, SIDECAR announces a factor within which its list will be exact at
+        every rank, allowing the serving system to stop early once a quality target or latency limit is reached.
+}
+
 \cventry{2025}{AXE: A Task Decomposition Approach to Learned LSM Tuning}{}{}{VLDB 2025}
 {
     Co-authors: Andy Huynh, Anwesha Saha, Prof. Manos Athanassoulis\\

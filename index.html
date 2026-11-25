@@ -195,7 +195,17 @@
 			        <h4 class="text-center mb-3 mt-5">Latest News</h4>
 			        <div class="speech-bubble bg-white p-4 p-lg-5 shadow-sm">
 
-			<p class="mb-12 text-secondary text-left"><b class="text-primary">Oct 2023:</b>  
+			<p class="mb-12 text-secondary text-left"><b class="text-primary">Nov 2026:</b>
+                        My paper, "Speculative Decoding for Semantic-ID-Based Generative Recommendations"
+                        (SIDECAR), is now available on <a href="https://arxiv.org/abs/2611.32855">arXiv</a>!
+                        </p>
+
+                        <p class="mb-12 text-secondary text-left"><b class="text-primary">Nov 2025:</b>
+                        Our work, "AXE: A Task Decomposition Approach to Learned LSM Tuning" has been
+                        published in <a href="https://www.vldb.org/pvldb/vol18/p5582-huynh.pdf">PVLDB Vol. 18</a>!
+                        </p>
+
+                        <p class="mb-12 text-secondary text-left"><b class="text-primary">Oct 2023:</b>
                         Our work, "Towards Flexibility and Robustness of LSM Trees" has been accepted for
                         publication by the VLDB Journal!
                         </p>
@@ -256,6 +266,74 @@
             <div class="row">
 		        <div class="research-intro col-12 col-lg-12 mx-lg-auto mb-5 text-center">
 			        <h4 class="text-center mb-3 mt-5 pb-5">Research projects</h4>
+
+	                    <div class="project mb-5 flex-column flex-lg-row bg-white shadow-sm">
+		                    <div class="card-img-container position=relative">
+                                <img class="card-img-top rounded-0" src="assets/images/projects/project-9.png" alt="">
+		                    </div>
+		                    <div class="project-body p-4">
+                                <h5 class="paper-title">Speculative Decoding for Semantic-ID-Based Generative
+                                    Recommendations</h5>
+                                <ul class="paper-authors list-inline mb-3 mt-2">
+                                    <li class="list-inline-item">Authors: </li>
+                                    <li class="list-inline-item">Harshal A. Chaudhari</li>
+                                </ul>
+			                    <div class="paper-content">
+			            	        <p>Generative recommenders that represent items as Semantic IDs (SIDs) typically
+                                    		retrieve candidates with constrained beam search, which costs one sequential
+                                    		model call per SID level and cannot tell when its output differs from the exact
+                                    		top-K. We propose SIDECAR, a decoder that scores approximate draft candidates in
+                                    		a single tree-attention pass (memory permitting) and certifies the exact top-K
+                                    		whenever the draft contains it; otherwise, a branch-and-bound fallback expands only
+                                    		the parts of the trie that can still change the output. Under a fixed memory and
+                                    		latency budget, SIDECAR announces a factor within which its list is exact at every
+                                    		rank, letting the serving system stop early once a quality target or latency limit
+                                    		is reached.</p>
+			                    </div>
+			                    <ul class="paper-meta list-inline mb-2">
+			            	        <li class="list-inline-item"><i class="fas fa-code-branch mr-2"></i>GitHub</li>
+                                    <li class="list-inline-item"><i class="fas fa-file-pdf mr-2"></i>
+                                    <a href="./assets/pdfs/papers/paper-9.pdf">PDF</a></li>
+                                    <li class="list-inline-item"><i class="fas fa-book mr-2"></i>
+                                    <a href="https://arxiv.org/abs/2611.32855">arXiv</a></li>
+			                    </ul>
+		                    </div>
+	                    </div><!--//project-->
+
+	                    <div class="project mb-5 flex-column flex-lg-row bg-white shadow-sm">
+		                    <div class="card-img-container position=relative">
+                                <img class="card-img-top rounded-0" src="assets/images/projects/project-8.png" alt="">
+		                    </div>
+		                    <div class="project-body p-4">
+                                <h5 class="paper-title">AXE: A Task Decomposition Approach to Learned LSM Tuning</h5>
+                                <ul class="paper-authors list-inline mb-3 mt-2">
+                                    <li class="list-inline-item">Authors: </li>
+                                    <li class="list-inline-item">Andy Huynh, </li>
+                                    <li class="list-inline-item">Anwesha Saha, </li>
+                                    <li class="list-inline-item">Harshal A. Chaudhari, </li>
+                                    <li class="list-inline-item">Manos Athanassoulis</li>
+                                </ul>
+			                    <div class="paper-content">
+			            	        <p>Tuning LSM trees grows harder as the number of tuning knobs increases: expert-built
+                                    		cost models and numerical solvers demand deep domain knowledge, while Bayesian
+                                    		Optimization (BO) learns from costly database executions at deployment time. We
+                                    		introduce AXE, a learned tuning paradigm that decomposes the task into two steps:
+                                    		a learned cost model, trained on existing performance models or execution logs,
+                                    		serves as the loss function for a learned tuner trained on arbitrarily many
+                                    		generated samples. AXE requires no retraining, recommends better tunings than BO
+                                    		71% of the time with 100&times; lower tuning overhead, and outperforms
+                                    		state-of-the-art machine learning and analytical baselines.</p>
+			                    </div>
+			                    <ul class="paper-meta list-inline mb-2">
+			            	        <li class="list-inline-item"><i class="fas fa-code-branch mr-2"></i>
+                                    <a href="https://github.com/BU-DiSC/proj_axe">GitHub</a></li>
+                                    <li class="list-inline-item"><i class="fas fa-file-pdf mr-2"></i>
+                                    <a href="./assets/pdfs/papers/paper-8.pdf">PDF</a></li>
+                                    <li class="list-inline-item"><i class="fas fa-book mr-2"></i>
+                                    <a href="https://www.vldb.org/pvldb/vol18/p5582-huynh.pdf">Proceedings</a></li>
+			                    </ul>
+		                    </div>
+	                    </div><!--//project-->
 
 			    <div class="project mb-5 flex-column flex-lg-row bg-white shadow-sm">
 		                    <div class="card-img-container position=relative">
